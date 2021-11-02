@@ -13,25 +13,31 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
 call plug#end()
 
+" General Text Settings
 set encoding=UTF-8
+set shiftwidth=4
+set expandtab
+set tabstop=4
+set softtabstop=4
+set backspace=indent,eol,start
+set autoindent
+set smartindent
+" UI and Nice to haves
 set confirm
 set number
 set relativenumber
-set expandtab
 set nobackup
 set nowrap
-set incsearch
 set showcmd
 set showmode
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-set autoindent
-set smartindent
-set backspace=indent,eol,start
 set wildmenu
+set wildmode=list:longest
 set belloff=all
 colorscheme dracula
+" Searching
+set incsearch
+set showmatch
+
 
 nnoremap <C-o> :NERDTreeToggle<CR>
 nnoremap <space> :
