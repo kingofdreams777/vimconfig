@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'dracula/vim', {'as':'dracula'}
     Plug 'vim-syntastic/syntastic'
     Plug 'vim-airline/vim-airline'
+    Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " General Text Settings
