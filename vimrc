@@ -2,6 +2,8 @@
 
 set nocompatible
 
+syntax enable
+
 call plug#begin('~/.vim/plugged')
 
     Plug 'scrooloose/nerdtree'
@@ -9,11 +11,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'ycm-core/YouCompleteMe'
     Plug 'jiangmiao/auto-pairs'
     Plug 'dracula/vim', {'as':'dracula'}
+    Plug '~/.vim/pack/themes/dracula_pro'
     Plug 'vim-syntastic/syntastic'
     Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+let g:dracula_colorterm = 0
 
 " General Text Settings
 set encoding=UTF-8
