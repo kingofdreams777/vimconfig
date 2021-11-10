@@ -1,8 +1,15 @@
 " My vimrc. Let's hope it works this time
+"
+
+" Automate Installation of Vim Plug if not found
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 set nocompatible
 
-syntax enable
 
 call plug#begin('~/.vim/plugged')
 
@@ -11,7 +18,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ycm-core/YouCompleteMe'
     Plug 'jiangmiao/auto-pairs'
     Plug 'dracula/vim', {'as':'dracula'}
-    Plug '~/.vim/pack/themes/dracula_pro'
     Plug 'vim-syntastic/syntastic'
     Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-fugitive'
