@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-syntastic/syntastic'
     Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-fugitive'
+    Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
 
