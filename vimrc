@@ -13,15 +13,11 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'scrooloose/nerdtree'
     Plug 'dense-analysis/ale'
-    Plug 'ycm-core/YouCompleteMe'
-    Plug 'jiangmiao/auto-pairs'
     Plug 'dracula/vim', {'as':'dracula'}
     Plug 'vim-syntastic/syntastic'
     Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-fugitive'
-    Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
 
